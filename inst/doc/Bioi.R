@@ -1,10 +1,10 @@
-## ----setup, include = FALSE----------------------------------------------
+## ----setup, include = FALSE---------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 library(Bioi)
 
 # Generate two data sets to simulate 3D PALM data.
@@ -25,7 +25,7 @@ mTwo <- as.matrix(data.frame(
 # Get separation distances.
 find_min_dists(mOne, mTwo)
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 # Generate random data.
 set.seed(10)
 input <- as.matrix(data.frame(x=rnorm(10),y=rnorm(10)))
@@ -35,13 +35,13 @@ groups <- euclidean_linker(input, 0.8)
 
 print(groups)
 
-## ----eval=FALSE----------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  library(ggplot2)
 #  input <- as.data.frame(input)
 #  input$group <- as.character(groups)
 #  ggplot(input, aes(x, y, colour = group)) + geom_point(size = 3)
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 # Generate a random matrix.
 set.seed(10)
 mat <- matrix(runif(70), nrow = 7)

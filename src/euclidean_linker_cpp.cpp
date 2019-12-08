@@ -30,7 +30,7 @@ using namespace Rcpp;
 //'
 //' @examples
 //' # Function call
-//' \dontrun{euclidean_linker_cpp(inputMatrix, critDist)}
+//' \dontrun{.euclidean_linker_cpp(inputMatrix, critDist)}
 //'
 //' @import Rcpp
 //'

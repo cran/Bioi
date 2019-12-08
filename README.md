@@ -3,6 +3,8 @@
 [![Travis-CI Build Status](https://travis-ci.org/zcolburn/Bioi.svg?branch=master)](https://travis-ci.org/zcolburn/Bioi)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/zcolburn/Bioi?branch=master&svg=true)](https://ci.appveyor.com/project/zcolburn/Bioi)
 [![codecov](https://codecov.io/gh/zcolburn/Bioi/branch/master/graph/badge.svg)](https://codecov.io/gh/zcolburn/Bioi)
+[![](https://cranlogs.r-pkg.org/badges/Bioi)](https://cran.r-project.org/package=Bioi)
+[![DOI](https://zenodo.org/badge/110783607.svg)](https://zenodo.org/badge/latestdoi/110783607)
 
 
 ## Overview
@@ -36,10 +38,8 @@ The parallelized method works similarly to the partitioned method but operates i
 
 
 ### Connected component labeling
-A common image processing task is to group all connected "object-positive" pixels in an image into single groups. The connected component labeling function implemented here can be used on 1, 2, or 3-dimensional arrays representing 1, 2, or 3-dimensional "images". This functionality can be acessed using the `find_blobs` function.
+A common image processing task is to group all connected "object-positive" pixels in an image into single groups. The connected component labeling function implemented here can be used on 1, 2, or 3-dimensional arrays representing 1, 2, or 3-dimensional "images". This functionality can be accessed using the `find_blobs` function.
 
 
 ### Determine the nearest neighbor in an alternate set of points
 Photoactivated localization microscopy (PALM) data results in large numbers of protein localizations being identified. A common task when working with dual channel PALM data is to identify the distance separating points in one data set from points in a second data set. The function `find_min_dists` identifies the nearest neighbor to a point in a second data set and its distance from the point of interest.
-
-
